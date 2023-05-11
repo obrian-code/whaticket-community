@@ -183,11 +183,11 @@ docker run --name whaticketdb -e MYSQL_ROOT_PASSWORD=strongpassword -e MYSQL_DAT
 
 # Or run using `docker-compose` as below
 # Before copy .env.example to .env first and set the variables in the file.
-docker-compose up -d mysql
+docker compose up -d mysql
 
 # To administer this mysql database easily using phpmyadmin. 
 # It will run by default on port 9000, but can be changed in .env using `PMA_PORT`
-docker-compose -f docker-compose.phpmyadmin.yaml up -d
+docker compose -f docker-compose.phpmyadmin.yaml up -d
 ```
 
 Clone this repository:
